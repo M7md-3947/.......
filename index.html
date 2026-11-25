@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>محمد مساعد | portfolio </title>
+  <meta name="description" content="الموقع الشخصي لطالب علوم الحاسب محمد مساعد — عرض المهارات، المشاريع الجامعية والتقنية، وروابط التواصل.">
+
+  <!-- بطاقة معاينة الرابط (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="محمد مساعد | طالب علوم حاسب">
+  <meta property="og:description" content="تعرف على مهاراتي ومشاريعي في تطوير الويب، البرمجة، والأنظمة الذكية.">
+  <meta property="og:image" content="https://M7md-3947.github.io/portfolio/assets/og-image.png">
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- خط IBM Plex Sans Arabic من خطوط قوقل -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- 1. الشريط العلوي -->
+  <header class="site-header">
+    <nav class="container nav-bar" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#hero">محمد مساعد</a>
+      <ul class="nav-links">
+        <li><a href="#about">عنّي</a></li>
+        <li><a href="#skills">المهارات</a></li>
+        <li><a href="#projects">المشاريع</a></li>
+        <li><a href="#contact">التواصل</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-btn" aria-label="تبديل الوضع الداكن">
+        الوضع الداكن 🌙
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. الواجهة (Hero) -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <span id="greeting-text" class="greeting-badge">أهلاً بك في موقعي الشخصي</span>
+        <h1>محمد مساعد</h1>
+        <p class="hero-role">طالب علوم حاسب احب التطوير والبرمجة وكل ما يخص التقنية شغوف لتعلم كل جديد</p>
+        <p class="hero-bio">
+          أحب تحويل الأفكار ومشاريع المقررات الجامعية إلى تطبيقات ومواقع واضحة وسريعة تعمل بسلاسة على الجوال والكمبيوتر.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">شاهد مشاريعي</a>
+          <a href="assets/cv.pdf" class="btn btn-outline" download>حمّل سيرتي الذاتية</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. قسم عنّي (Bento Grid) -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">عنّي</h2>
+        <div class="bento-grid">
+          <article class="bento-card bento-wide">
+            <h3>نبذة مختصرة</h3>
+            <p>
+              طالب في كلية الحاسب شغوف بالبرمجة وبناء المشاريع التقنية من الصفر. أركز على كتابة كود نظيف ومفهوم،
+              وأشارك في الأندية الطلابية وورش العمل لتبادل المعرفة مع زملائي.
+            </p>
+          </article>
+
+          <article class="bento-card bento-photo">
+            <img class="avatar" src="assets/images/صورة شخصية.jpeg" alt="صورة شخصية لمحمد مساعد" width="400" height="400">
+            <strong>محمد مساعد</strong>
+          </article>
+
+          <article class="bento-card">
+            <h3>الجامعة والتخصص</h3>
+            <p>بكالوريوس علوم الحاسب — جامعة أم القرى.</p>
+          </article>
+
+          <article class="bento-card">
+            <h3>أتعلم حالياً</h3>
+            <p>تطوير واجهات الويب التفاعلية، هياكل البيانات، والانابيب الصوتية (Audio pipelines).</p>
+          </article>
+
+          <article class="bento-card">
+            <h3>اهتماماتي</h3>
+            <p>تعلم الآلة (ML)، تصميم واجهات بسيطة، والعمل الجماعي في الهاكاثونات.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. قسم المهارات -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">المهارات</h2>
+        <ul class="skills-list">
+          <li class="skill-badge">HTML5</li>
+          <li class="skill-badge">CSS3</li>
+          <li class="skill-badge">JavaScript</li>
+          <li class="skill-badge">Python</li>
+          <li class="skill-badge">Java</li>
+          <li class="skill-badge">Git &amp; GitHub</li>
+          <li class="skill-badge">Linux</li>
+          <li class="skill-badge">ESP32 &amp; IoT</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. قسم المشاريع -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">المشاريع</h2>
+
+        <div class="filter-bar" role="group" aria-label="تصفية المشاريع">
+          <button type="button" class="filter-btn" data-category="all" aria-pressed="true">الكل</button>
+          <button type="button" class="filter-btn" data-category="web" aria-pressed="false">ويب</button>
+          <button type="button" class="filter-btn" data-category="ai" aria-pressed="false">ذكاء اصطناعي و IoT</button>
+          <button type="button" class="filter-btn" data-category="security" aria-pressed="false">أمن سيبراني</button>
+        </div>
+
+        <div id="projects-grid" class="projects-grid">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. قسم التواصل -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">التواصل</h2>
+        <div class="contact-box">
+          <p>يسعدني تواصلكم للتعاون في المشاريع الطلابية، الهاكاثونات، أو تبادل الخبرات التقنية.</p>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:mohammedeng3957@gmail.com">البريد الإلكتروني</a>
+          <button type="button" id="copy-email-btn" class="btn btn-outline" data-email="mohammedeng3957@gmail.com">نسخ البريد 📋</button>
+            <a class="btn btn-outline" href="https://github.com/M7md-3947" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/mohammed-ghaleb-5379aa407/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-outline" href="https://x.com/m7md_3957" target="_blank" rel="noopener">X</a>
+
+          </div>
+          <p id="copy-feedback" class="copy-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. الشريط السفلي -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> محمد مساعد — مبني ضمن معسكر من الصفر إلى البورتفوليو</p>
+    </div>
+  </footer>
+  <!-- قالب بطاقة المشروع (يُنسخ بـ JavaScript بدون innerHTML) -->
+  <template id="project-card-template">
+    <article class="project-card">
+      <img class="project-img" src="" alt="" width="800" height="450" loading="lazy">
+      <div class="project-body">
+        <h3 class="project-title"></h3>
+        <p class="project-desc"></p>
+        <div class="project-tags"></div>
+        <div class="project-links">
+          <a class="project-link demo-link" href="#" target="_blank" rel="noopener">معاينة المشروع</a>
+          <a class="project-link code-link" href="#" target="_blank" rel="noopener">الكود على GitHub</a>
+        </div>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
